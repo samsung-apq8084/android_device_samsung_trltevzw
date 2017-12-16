@@ -59,20 +59,13 @@ void init_target_properties()
 
     std::string bootloader = property_get("ro.bootloader");
 
-    if (bootloader.find("N910P") == 0) {
-        property_override("ro.build.fingerprint", "samsung/trltespr/trltespr:6.0.1/MMB29M/N910PVPS4DQG1:user/release-keys");
-        property_override("ro.build.description", "trltespr-user 6.0.1 MMB29M N910PVPS4DQG1 release-keys");
-        property_override("ro.product.model", "SM-N910P");
-        property_override("ro.product.device", "trltespr");
-        property_override("ro.product.name", "trltespr");
-        cdma_properties("Sprint", "310120", "1");
-    } else if (bootloader.find("N910R4") == 0) {
-        property_override("ro.build.fingerprint", "samsung/trlteusc/trlteusc:6.0.1/MMB29M/N910R4TYS1CQC1:user/release-keys");
-        property_override("ro.build.description", "trlteusc-user 6.0.1 MMB29M N910R4TYS1CQC1 release-keys");
-        property_override("ro.product.model", "SM-N910R4");
-        property_override("ro.product.device", "trlteusc");
-        property_override("ro.product.name", "trlteusc");
-        cdma_properties("U.S. Cellular", "311580", "0");
+    if (bootloader.find("N910V") == 0) {
+        property_override("ro.build.fingerprint", "samsung/trltevzw/trltevzw:6.0.1/MMB29M/N910VVRU2CQF2:user/release-keys");
+        property_override("ro.build.description", "trltevzw-user 6.0.1 MMB29M N910VVRU2CQF2 release-keys");
+        property_override("ro.product.model", "SM-N910V");
+        property_override("ro.product.device", "trltevzw");
+        property_override("ro.product.name", "trltevzw");
+        cdma_properties("Verizon", "311480", "0");
     } else {
         ERROR("Setting product info FAILED\n");
     }

@@ -17,7 +17,7 @@
 
 set -e
 
-export DEVICE=trltespr
+export DEVICE=trltevzw
 export DEVICE_COMMON=trlte-common
 export VENDOR=samsung
 

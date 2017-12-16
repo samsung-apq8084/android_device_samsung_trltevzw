@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/trltespr/full_trltespr.mk)
+$(call inherit-product, device/samsung/trltevzw/full_trltevzw.mk)
 
 # Inherit common LineageOS phone.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_DEVICE := trltespr
-PRODUCT_NAME := lineage_trltespr
+PRODUCT_DEVICE := trltevzw
+PRODUCT_NAME := lineage_trltevzw

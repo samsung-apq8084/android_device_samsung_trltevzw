@@ -15,14 +15,14 @@
 # inherit from common trlte
 -include device/samsung/trlte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := trltespr,trlteusc
+TARGET_OTA_ASSERT_DEVICE := trltevzw
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_spr_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_vzw_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_apq8084
-TARGET_LIBINIT_APQ8084_DEFINES_FILE := device/samsung/trltespr/init/init_trlte.cpp
+TARGET_LIBINIT_APQ8084_DEFINES_FILE := device/samsung/trltevzw/init/init_trlte.cpp
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -32,4 +32,4 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3774873600
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 27040657408
 
 # inherit from the proprietary version
--include vendor/samsung/trltespr/BoardConfigVendor.mk
+-include vendor/samsung/trltevzw/BoardConfigVendor.mk
